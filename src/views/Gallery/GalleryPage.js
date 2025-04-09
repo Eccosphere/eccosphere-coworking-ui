@@ -1,15 +1,9 @@
-import React, { useEffect } from "react";
-import styles from "./style.module.css";
+import React from "react";
+import styles from "./GalleryPage.module.css";
 import { images } from "./config/galleryData";
-import PropTypes from "prop-types";
+import Image from "next/image";
 
-const Gallery = (props) => {
-  const { setTitle } = props;
-
-  useEffect(() => {
-    setTitle("Eccosphere - Gallery");
-  }, [setTitle]);
-
+const GalleryPage = () => {
   return (
     <div className={styles["gallery"]}>
       <div className={styles["gallery-container"]}>
@@ -27,7 +21,7 @@ const Gallery = (props) => {
       <div className={styles["gallery-grid"]}>
         {images.map((src, index) => (
           <div key={index} className={styles["gallery-item"]}>
-            <img src={src} alt={`Workspace ${index + 1}`} />
+            <Image src={src} alt={`Workspace ${index + 1}`} />
           </div>
         ))}
       </div>
@@ -35,8 +29,4 @@ const Gallery = (props) => {
   );
 };
 
-Gallery.propTypes = {
-  setTitle: PropTypes.func.isRequired,
-};
-
-export default Gallery;
+export default GalleryPage;

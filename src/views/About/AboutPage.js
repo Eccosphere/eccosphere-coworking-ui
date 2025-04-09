@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./AboutPage.module.css";
 import OurStory from "./component/OurStory/OurStory";
 import OurMissionAndVision from "./component/OurMissionAndVision/OurMissionAndVision";
 import WhyChooseUs from "./component/WhyChooseUs/WhyChooseUs";
 import OurTeam from "./component/OurTeam/OurTeam";
 import CallToAction from "./component/CallToAction/CallToAction";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className={styles["about"]}>
       <div className={styles["about-container"]}>
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

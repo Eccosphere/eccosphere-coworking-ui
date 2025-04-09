@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../../../../assets/spaceImages/zen_garden.jpeg";
 import "./HomeContent.css";
+import Image from "next/image";
 
 const HomeContent = () => {
   return (
@@ -24,7 +25,7 @@ const HomeContent = () => {
 
       {/* Right Side - Image Cards */}
       <div className="home-images">
-        <img src={image} alt="home Garden" className="home-img" />
+        <Image src={image} alt="home Garden" className="home-img" />
       </div>
     </div>
   );

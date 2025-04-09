@@ -1,0 +1,106 @@
+.sliderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  background-color: #111;
+}
+
+.imageSlider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.imageSlider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.amenityCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  max-width: 250px;
+  height: 200px;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.6;
+}
+
+.amenityCard.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.imageWrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%; /* Adjust image size */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.amenityName {
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.navButton {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.navButton:first-of-type {
+  left: 10px;
+}
+
+.navButton:last-of-type {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .imageSlider {
+    width: 100%;
+  }
+
+  .amenityCard {
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./OurWorkspaces.module.css";
 import { workspaces } from "../../config/homeData";
+import Image from "next/image";
 
 const OurWorkspaces = () => {
   return (
@@ -13,7 +14,7 @@ const OurWorkspaces = () => {
         <div className="div-space-between f-wrap">
           {workspaces.map((item) => (
             <div key={item.id} className={styles["card"]}>
-              <img
+              <Image
                 src={item.image}
                 alt={item.name}
                 className={styles["card-images"]}

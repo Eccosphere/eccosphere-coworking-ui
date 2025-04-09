@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./ContactPage.module.css";
 import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div className={styles.contactContainer}>
       {/* Hero Section */}
@@ -30,7 +30,11 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className={styles.contactForm}>
         <div className={styles.formContainer}>
-          <GoogleAdsForm heading={"Request a Call Back"} iframeClass={styles.formHeight} />
+          <GoogleAdsForm
+            heading={"Request a Call Back"}
+            iframeClass={styles.formHeight}
+            icon={false}
+          />
         </div>
       </section>
 
@@ -78,4 +82,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

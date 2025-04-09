@@ -2,7 +2,7 @@ import React from "react";
 import { FaBullseye, FaGlobe, FaHandshake } from "react-icons/fa";
 import mohtashimAquil from "../../../assets/teamImages/mohtashim_aquil.jpeg";
 import gautamDuggal from "../../../assets/teamImages/gautam_duggal.jpg";
-import sameerIqbal from "../../../assets/teamImages/blue-circle-with-white-user.avif";
+import sameerIqbal from "../../../assets/teamImages/blue-circle-with-white-user.png";
 import img from "../../../assets/spaceImages/IMG_20181013_151720-01-01.jpeg";
 import img1 from "../../../assets/images/Tree_1.jpg";
 import img2 from "../../../assets/spaceImages/1(1).jpg";

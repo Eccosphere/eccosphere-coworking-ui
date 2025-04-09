@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./BlogPage.module.css";
 import BlogCard from "./component/BlogCard";
 import { blogData } from "./config/blogData";
 
-const Blog = () => {
+const BlogPage = () => {
   return (
     <div className={styles["blog"]}>
       <div className={styles["blog-container"]}>
@@ -26,4 +26,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;

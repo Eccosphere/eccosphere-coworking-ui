@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./OurTeam.module.css";
 import { teamMembers } from "../../config/aboutData";
+import Image from "next/image";
 
 const OurTeam = () => {
   return (
@@ -9,7 +10,7 @@ const OurTeam = () => {
       <div className={styles.teamGrid}>
         {teamMembers.map((member) => (
           <div key={member.id} className={styles.teamCard}>
-            <img
+            <Image
               src={member.image}
               alt={member.name}
               className={styles.teamImage}

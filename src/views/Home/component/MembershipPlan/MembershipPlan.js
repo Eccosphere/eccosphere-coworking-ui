@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./MembershipPlan.module.css";
 import { membershipPlan } from "../../config/homeData";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
 const MembershipPlan = () => {
   return (
@@ -11,7 +12,7 @@ const MembershipPlan = () => {
         <div className={styles["card-container"]}>
           {membershipPlan.map((plan) => (
             <div className={styles["card"]} key={plan.id}>
-              <img
+              <Image
                 src={plan.img}
                 className={styles["card-img"]}
                 alt={plan.title}
@@ -23,7 +24,7 @@ const MembershipPlan = () => {
                   *Terms and Condition Applied
                 </p>
                 <div className="div-center">
-                  <Link to={"tel:+918506054055"}>
+                  <Link href={"tel:+918506054055"}>
                     <button className={styles["card-btn"]}>Call us Now</button>
                   </Link>
                 </div>

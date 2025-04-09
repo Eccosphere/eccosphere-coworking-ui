@@ -1,21 +1,14 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../Navbar/Navbar";
 import styles from "./EccoLayout.module.css";
 import EccoFooter from "../EccoFooter/EccoFooter";
 import PropTypes from "prop-types";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const EccoLayout = ({ children }) => {
-  const router = useRouter();
-  const [isHome, setIsHome] = useState(false);
-
-  useEffect(() => {
-    if (router.isReady) {
-      setIsHome(router.pathname === "/");
-    }
-  }, [router.isReady, router.pathname]);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <div className={styles["ecco-layout"]}>
@@ -24,7 +17,7 @@ const EccoLayout = ({ children }) => {
       </div>
 
       <div className={styles["ecco-layout-container"]}>
-        {isHome ? children : <div className={styles["layout"]}>{children}</div>}
+        <div className={isHome ? "w-100" : styles["layout"]}>{children}</div>
       </div>
 
       <div className={styles["ecco-layout-footer"]}>

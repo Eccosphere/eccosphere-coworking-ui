@@ -35,7 +35,7 @@
 .heading-text {
   color: var(--headerBg);
   font-size: 2.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
 }
 
 /* Layout: Text & Image */
@@ -56,10 +56,9 @@
 
 .description {
   font-size: 18px;
-  line-height: 1.8;
+  font-weight: 400;
   color: var(--headerBg);
   margin: 20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Image Section */

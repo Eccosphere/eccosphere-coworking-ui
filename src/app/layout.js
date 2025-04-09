@@ -1,6 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import EccoLayout from "@/components/EccoLayout/EccoLayout";
+import "@/styles/textFont.css";
+import "@/styles/positions.css";
+import "@/styles/iconStyles.css";
+import "@/styles/widthMarginPadding.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

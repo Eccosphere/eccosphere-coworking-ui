@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./WhyChooseUs.module.css";
 import { whyChooseUs } from "../../config/aboutData";
+import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
@@ -14,7 +15,7 @@ const WhyChooseUs = () => {
           {whyChooseUs.map((item) => (
             <div key={item.id} className={styles["card"]}>
               <div className={styles["image-container"]}>
-                <img
+                <Image
                   className={styles["card-images"]}
                   src={item.images}
                   alt={item.title}

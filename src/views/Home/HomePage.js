@@ -1,24 +1,20 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import styles from "./HomePage.module.css";
+import Image from "next/image";
+import { amenities, imageGallery } from "./config/homeData";
 import { Carousel } from "react-bootstrap";
-import styles from "./style.module.css";
-import { imageGallery } from "./config/homeData";
-import MembershipPlan from "./component/MembershipPlan/MembershipPlan";
+import HomeContent from "./component/HomeContent/HomeContent";
 import WhyChooseUsHome from "./component/WhyChooseUsHome/WhyChooseUsHome";
 import OurWorkspaces from "./component/OurWorkspaces/OurWorkspaces";
+import MembershipPlan from "./component/MembershipPlan/MembershipPlan";
+import GoogleAdsForm from "@/components/GoogleAdsForm/GoogleAdsForm";
 import CommunityTestimonials from "./component/CommunityTestimonials/CommunityTestimonials";
-import HomeContent from "./component/HomeContent/HomeContent";
-import Amenities from "./component/Amenities/Amenities";
-import PopModal from "../../components/PopModal";
-import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
+import PopModal from "@/components/PopModal";
+import AmenitiesSlider from "./component/AmenitiesSlider/AmenitiesSlider";
 
-const Home = (props) => {
-  const { setTitle } = props;
+const HomePage = () => {
   const [openModal, setOpenModal] = useState(false);
-
-  useEffect(() => {
-    setTitle("Eccosphere The Coworking Sanctuary");
-  }, [setTitle]);
 
   useEffect(() => {
     setOpenModal(true);
@@ -37,31 +33,32 @@ const Home = (props) => {
       <div className={styles["image-container"]}>
         <Carousel
           className="w-100 h-70"
-          slide={false}
+          slide={true}
           indicators={false}
           controls={false}
           pause="hover"
         >
           {imageGallery.map((img) => (
-            <Carousel.Item className={"h-100"} key={img.id}>
-              <img
+            <Carousel.Item interval={1000} className={"h-100"} key={img.id}>
+              <Image
                 src={img.src}
                 alt={`space-img-${img.id}`}
                 className={styles["space-img"]}
+                key={img.id}
               />
             </Carousel.Item>
           ))}
-          <div className={styles["header-div"]}>
-            <div className={styles["text-div"]}>
-              <h1 className={styles["heading-text"]}>
-                Community, creativity, comfort & more
-              </h1>
-              <button className={styles["btn"]} onClick={handleOpenModal}>
-                Contact Us
-              </button>
-            </div>
-          </div>
         </Carousel>
+        <div className={styles["header-div"]}>
+          <div className={styles["text-div"]}>
+            <h1 className={styles["heading-text"]}>
+              Community, creativity, comfort & more
+            </h1>
+            <button className={styles["btn"]} onClick={handleOpenModal}>
+              Contact Us
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className={styles["home"]}>
@@ -84,7 +81,7 @@ const Home = (props) => {
           <MembershipPlan />
         </div>
         <div className={styles["amenities-container"]}>
-          <Amenities />
+          <AmenitiesSlider images={amenities} />
         </div>
         <div className={styles["home-container"]}>
           <CommunityTestimonials />
@@ -99,14 +96,12 @@ const Home = (props) => {
         <GoogleAdsForm
           className={styles["google-ads"]}
           heading={"Book a Tour"}
+          setOpenModal={setOpenModal}
+          icon={true}
         />
       </PopModal>
     </div>
   );
 };
 
-export default Home;
-
-Home.propTypes = {
-  setTitle: PropTypes.func.isRequired,
-};
+export default HomePage;

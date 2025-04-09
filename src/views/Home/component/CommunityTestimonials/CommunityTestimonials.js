@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CommunityTestimonials.module.css";
 import { partners, testimonials } from "../../config/homeData";
+import Image from "next/image";
 
 const CommunityTestimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +28,7 @@ const CommunityTestimonials = () => {
           >
             <p className={styles["testimonial-quote"]}>“{testimonial.quote}”</p>
             <div className={styles["testimonial-user"]}>
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
                 className={styles["testimonial-avatar"]}
@@ -46,7 +47,7 @@ const CommunityTestimonials = () => {
         <h3 className={styles["partners-title"]}>Our Trusted Partners</h3>
         <div className={styles["partners-logos"]}>
           {partners.map((logo, index) => (
-            <img
+            <Image
               key={index}
               src={logo}
               alt="Partner Logo"

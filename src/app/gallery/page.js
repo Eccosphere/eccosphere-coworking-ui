@@ -1,11 +1,8 @@
+import GalleryPage from "@/views/Gallery/GalleryPage";
 import React from "react";
 
 const Gallery = () => {
-  return (
-    <div>
-      <h1>Gallery</h1>
-    </div>
-  );
+  return <GalleryPage />;
 };
 
 export default Gallery;

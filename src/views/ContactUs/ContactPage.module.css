@@ -60,13 +60,6 @@
   width: 50%;
 }
 
-.map {
-  width: 900px;
-  height: 500px;
-  border-width: 0px;
-  border-radius: 15px;
-}
-
 @media screen and (max-width: 768px) {
   .contactContainer {
     padding: 40px 0;
@@ -80,11 +73,12 @@
     font-size: 1.5rem;
   }
 
-  h3 {
+  .infoBox h3 {
     font-size: 1.2rem;
   }
 
-  p {
+  .hero,
+  .infoBox p {
     font-size: 0.8rem;
   }
 
@@ -99,6 +93,6 @@
   }
 
   .formHeight {
-    height: 100vh;
+    height: 550px !important;
   }
 }

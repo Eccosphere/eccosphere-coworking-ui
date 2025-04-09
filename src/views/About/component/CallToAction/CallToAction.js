@@ -25,7 +25,11 @@ const CallToAction = () => {
         </div>
 
         <div className={styles.ctaForm}>
-          <GoogleAdsForm />
+          <GoogleAdsForm
+            icon={false}
+            heading="Join Our Community"
+            iframeClass={styles.formHeight}
+          />
         </div>
       </div>
     </div>

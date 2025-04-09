@@ -8,6 +8,22 @@ import image from "../../../assets/spaceImages/5.jpg";
 import meetingRoom from "../../../assets/spaceImages/meeting_room.jpeg";
 import { FaBrain, FaBriefcase, FaDumbbell } from "react-icons/fa";
 import openSeat from "../../../assets/spaceImages/open_seats.jpg";
+import chair from "../../../assets/images/chair.png";
+import onlineSupport from "../../../assets/images/online-support.png";
+import wifi from "../../../assets/images/wi-fi.png";
+import cleaningService from "../../../assets/images/cleaning-services.png";
+import phoneBooth from "../../../assets/images/phone-booth.png";
+import printer from "../../../assets/images/printer.png";
+import cafe from "../../../assets/images/cafe.png";
+import shower from "../../../assets/images/shower.png";
+import skippingRope from "../../../assets/images/skipping-rope.png";
+import saddia from "../../../assets/teamImages/saddia.jpg";
+import himanshu from "../../../assets/teamImages/himanshu.jpg";
+import anshul from "../../../assets/teamImages/anshul.jpg";
+import nikhil from "../../../assets/teamImages/nikhil.jpg";
+import parking from "../../../assets/images/parking.png";
+import powerBackup from "../../../assets/images/power_backup.png";
+import gameZone from "../../../assets/images/game_zone.png";
 
 export const imageGallery = [
   { id: 1, src: openSeat },
@@ -138,109 +154,122 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "Eccosphere has transformed the way I work. Amazing community and work environment!",
+      "Eccosphere has completely transformed my work experience! The vibrant community, inspiring atmosphere, and top-notch facilities make it the perfect place to be productive and connect with like-minded professionals.",
     name: "Sadia Siddiqui​",
     company: "Director Sales-Media",
-    image:
-      "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.41_58096da3.jpg",
+    image: saddia,
   },
   {
     id: 2,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "My experience at Eccosphere has been truly amazing! The staff is incredibly helpful and welcoming. If you're looking for a top-notch coworking space, Eccosphere in Noida Sector 67 is a must-visit!",
     name: "HIMANSHU JAISWAL",
     company: "HEAD RESEARCH: MARKET RESEARCH",
-    image:
-      "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.39_1b749bb2.jpg",
+    image: himanshu,
   },
   {
     id: 3,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "The ambience is great, and the location is convenient, just a short walk from Sector 59 Metro Station. However, parking can be a challenge, so it's best to plan accordingly.",
     name: "Anshul Sharma",
     company: "AVP SALES,INFRA LINES RESEARCH",
-    image:
-      "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.40_940e8987.jpg",
+    image: anshul,
   },
   {
     id: 4,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "t's a fantastic place to work and collaborate with others. The co-working space is well-designed, offering a productive and comfortable environment. Highly recommended!",
     name: "NIKHIL CHAINANI",
     company: "FOUNDER PERSPECTICO-EDUCATION",
-    image:
-      "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.40_7b305c33.jpg",
+    image: nikhil,
   },
 ];
 
-export const partners = [
-  "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.41_58096da3.jpg",
-  "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.39_1b749bb2.jpg",
-  "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.40_940e8987.jpg",
-  "https://eccosphere.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-05-at-17.35.40_7b305c33.jpg",
-];
+export const partners = [saddia, himanshu, anshul, nikhil];
 
 export const amenities = [
   {
     id: 1,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-chairs-100.png",
+    img: chair,
     title: "SPACIOUS & UNIQUE COMMON AREAS",
     description:
       "We boast of customized art and furniture designed exclusively to enhance your creativity, comfort, and productivity. Step into the aesthetic best.",
   },
   {
     id: 2,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-online-support-100.png",
+    img: onlineSupport,
     title: "ONSITE STAFF",
     description:
       "From front-desk concierge to IT support, we ensure all your needs are taken care of, every moment, everyday",
   },
   {
     id: 3,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-wi-fi-100.png",
+    img: wifi,
     title: "SUPER-FAST INTERNET",
     description:
       "Get spoilt with extremely fast and secure internet, unmatched IT support services, guest log-in functionality to continually amplify work efficiency.",
   },
   {
     id: 4,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-cleaning-services-100-1.png",
+    img: cleaningService,
     title: "CLEANING SERVICES",
     description:
       "Let our motivated cleaning crew help you ensure that all common areas, meeting rooms, and private offices are constantly orderly and spiffy.",
   },
   {
     id: 5,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-phone-booth-100.png",
+    img: phoneBooth,
     title: "PRIVATE PHONE BOOTHS",
     description:
       "Use our soundproofed alcoves for conducting disturbance free private calls and video chats.",
   },
   {
     id: 6,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-printer-100.png",
+    img: printer,
     title: "PRINTING/SCANNING",
     description: "Best in class printers for all your business needs.",
   },
 
   {
     id: 7,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-cafe-100.png",
+    img: cafe,
     title: "FREE REFRESHMENT",
     description:
       "Fuel up at any time of the day with complimentary refreshments including fresh fruit water, coffee, and tea.",
   },
   {
     id: 8,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-shower-100.png",
+    img: shower,
     title: "SHOWER ROOMS",
     description:
       "Our sanctuary is equipped with state of the art shower facilities to ensure you’re fresh and energized, every moment.",
   },
   {
     id: 9,
-    img: "https://eccosphere.com/wp-content/uploads/2024/03/icons8-skipping-rope-100.png",
+    img: skippingRope,
     title: "CROSSFIT",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+  {
+    id: 10,
+    img: parking,
+    title: "PARKING",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+  {
+    id: 11,
+    img: powerBackup,
+    title: "POWER BACKUP",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+
+  {
+    id: 12,
+    img: gameZone,
+    title: "GAME ZONE",
     description:
       "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
   },
