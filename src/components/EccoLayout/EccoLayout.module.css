@@ -1,0 +1,56 @@
+@import url(../../styles/colors.css);
+@import url(../../styles/sizes.css);
+
+.ecco-layout {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.ecco-header {
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(135deg, #0493a51a 0%, #e1ffff 100%);
+  background-color: var(--headerBg4);
+  color: var(--white) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.ecco-layout-container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8%;
+}
+
+.layout {
+  width: 90%;
+  padding: 2.5rem 0.5rem;
+}
+
+.ecco-layout-footer {
+  width: 100%;
+  border-top: 0.5px solid var(--defaultTextFieldBorder);
+  background: linear-gradient(135deg, #0493a51a 0%, #e1ffff 100%);
+  padding: 1rem;
+}
+
+.layout-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ecco-layout-container {
+    margin-top: 7.9%;
+  }
+}

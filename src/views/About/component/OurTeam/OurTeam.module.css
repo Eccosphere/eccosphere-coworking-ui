@@ -1,0 +1,111 @@
+.teamSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #0b2b3e 0%, #0493a5 100%);
+  color: white;
+  border-radius: 15px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Team Grid */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Team Card */
+.teamCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Image */
+.teamImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: border-radius 0.4s ease-in-out, filter 0.4s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.teamImage:hover {
+  border-radius: 0%;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Content */
+.teamContent {
+  text-align: center;
+}
+
+.teamName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.teamRole {
+  font-size: 1rem;
+  color: #f0a500;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.teamBio {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .teamSection {
+    padding: 1.25rem 0.313rem;
+  }
+
+  .heading {
+    font-size: 1.375rem;
+  }
+
+  .teamCard {
+    max-width: 250px;
+  }
+
+  .teamName {
+    font-size: 1rem;
+  }
+
+  .teamRole {
+    font-size: 0.8rem;
+  }
+
+  .teamBio {
+    font-size: 0.75rem;
+  }
+}

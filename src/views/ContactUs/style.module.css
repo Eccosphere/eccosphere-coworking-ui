@@ -1,0 +1,104 @@
+.contactContainer {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.infoBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.contactForm {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mapSection {
+  margin: 50px 0;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.socialMedia {
+  margin-top: 30px;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.socialIcons a:hover {
+  color: #ff5722;
+}
+
+.formContainer {
+  width: 50%;
+}
+
+.map {
+  width: 900px;
+  height: 500px;
+  border-width: 0px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    padding: 40px 0;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  .formHeight {
+    height: 100vh;
+  }
+}

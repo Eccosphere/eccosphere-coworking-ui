@@ -1,0 +1,93 @@
+.ctaSection {
+  width: 100%;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0b2b3e1a 0%, #0493a51a 100%);
+  border-radius: 15px;
+}
+
+.ctaContent {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ctaHeading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ctaMapSection {
+  width: 50%;
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+
+.ctaForm {
+  width: 50%;
+  height: 43rem;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.map {
+  width: 100%;
+  height: 450px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .ctaSection {
+    padding: 20px 5px;
+  }
+
+  .ctaContent {
+    padding: 1rem;
+  }
+
+  .ctaHeading {
+    font-size: 1.375rem;
+  }
+
+  .ctaText {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaDiv {
+    flex-direction: column;
+  }
+
+  .ctaMapSection {
+    width: 100%;
+    padding: 20px 5px;
+    border-radius: 0;
+  }
+
+  .ctaForm {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .map {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+}
