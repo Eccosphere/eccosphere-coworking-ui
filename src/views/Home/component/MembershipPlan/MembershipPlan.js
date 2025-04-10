@@ -10,8 +10,8 @@ const MembershipPlan = () => {
       <div className={styles["membership-plan"]}>
         <h2 className={styles["heading-text"]}>Our Membership Plan</h2>
         <div className={styles["card-container"]}>
-          {membershipPlan.map((plan) => (
-            <div className={styles["card"]} key={plan.id}>
+          {membershipPlan.map((plan, index) => (
+            <div className={styles["card"]} key={`${plan.id}-${index}`}>
               <Image
                 src={plan.img}
                 className={styles["card-img"]}
