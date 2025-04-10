@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./AmenitiesSlider.module.css";
 import PropTypes from "prop-types";
@@ -43,8 +44,7 @@ const AmenitiesSlider = ({ images }) => {
 
   useEffect(() => {
     if (sliderRef.current) {
-      const scrollAmount =
-        window.innerWidth <= 768 ? 150 : 250;
+      const scrollAmount = window.innerWidth <= 768 ? 150 : 250;
       sliderRef.current.scrollLeft = currentIndex * scrollAmount;
 
       sliderRef.current.scrollTo({
