@@ -77,10 +77,6 @@
   scrollbar-width: none; /* Firefox */
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .google-ads {
   box-shadow: none !important;
   border: none !important;
