@@ -44,7 +44,6 @@ const HomePage = () => {
                 src={img.src}
                 alt={`space-img-${img.id}`}
                 className={styles["space-img"]}
-                key={img.id}
               />
             </Carousel.Item>
           ))}
@@ -81,6 +80,11 @@ const HomePage = () => {
           <MembershipPlan />
         </div>
         <div className={styles["amenities-container"]}>
+          <div className={styles["amenities-title"]}>
+            <h2 className={styles["amenities-heading-text"]}>
+              Amenities That work for you
+            </h2>
+          </div>
           <AmenitiesSlider images={amenities} />
         </div>
         <div className={styles["home-container"]}>

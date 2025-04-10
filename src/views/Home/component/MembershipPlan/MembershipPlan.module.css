@@ -74,6 +74,12 @@
   font-weight: var(--fontWeight500);
 }
 
+.heading-text {
+  color: var(--headerBg2);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 768px) {
   .membership-plan-container {
     padding: 0;
@@ -106,6 +112,11 @@
 
   .card-header {
     font-size: 16px;
+  }
+
+  .heading-text {
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 
   .body-md {

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Amenities.module.css";
 import { amenities } from "../../config/homeData";
+import Image from "next/image";
 
 const Amenities = () => {
   return (
@@ -15,7 +16,7 @@ const Amenities = () => {
         <div className={styles["amenities-grid"]}>
           {amenities.map((amenities) => (
             <div key={amenities.id} className={styles["amenities-card"]}>
-              <img
+              <Image
                 src={amenities.img}
                 className={styles["amenities-image"]}
                 alt={amenities.title}

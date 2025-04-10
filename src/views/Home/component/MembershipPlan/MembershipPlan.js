@@ -8,7 +8,7 @@ const MembershipPlan = () => {
   return (
     <div className={styles["membership-plan-container"]}>
       <div className={styles["membership-plan"]}>
-        <h1>Our Membership Plan</h1>
+        <h2 className={styles["heading-text"]}>Our Membership Plan</h2>
         <div className={styles["card-container"]}>
           {membershipPlan.map((plan) => (
             <div className={styles["card"]} key={plan.id}>
