@@ -1,5 +1,4 @@
-@import "../../styles/sizes.css";
-@import "../../styles/colors.css";
+@import "../../styles/variable.css";
 
 .navbar {
   width: 90%;
