@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: http://eccosphere.com/sitemap.xml
+Sitemap: https://eccosphere.com/sitemap.xml
