@@ -5,9 +5,10 @@ import "@/styles/textFont.css";
 import "@/styles/positions.css";
 import "@/styles/iconStyles.css";
 import "@/styles/widthMarginPadding.css";
-import "@/styles/sizes.css"
-import "@/styles/colors.css"
+import "@/styles/sizes.css";
+import "@/styles/colors.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,22 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <EccoLayout>{children}</EccoLayout>
+        <Script id="zoho-salesiq-init" strategy="afterInteractive">
+          {`
+    window.$zoho = window.$zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {
+      ready: function () {
+        // You can place additional configuration here
+        console.log("Zoho SalesIQ is ready");
+      }
+    };
+  `}
+        </Script>
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zohopublic.in/widget?wc=siq5a9a153358da43f0350a9dc8ea590dcb546e4cddeacc699456496e2e1e94d63d"
+          defer
+        ></Script>
       </body>
     </html>
   );
