@@ -39,7 +39,7 @@ const HomePage = () => {
           pause="hover"
         >
           {imageGallery.map((img) => (
-            <Carousel.Item interval={1000} className={"h-100"} key={img.id}>
+            <Carousel.Item interval={2000} className={"h-100"} key={img.id}>
               <Image
                 src={img.src}
                 alt={`space-img-${img.id}`}
