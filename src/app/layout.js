@@ -5,6 +5,8 @@ import "@/styles/textFont.css";
 import "@/styles/positions.css";
 import "@/styles/iconStyles.css";
 import "@/styles/widthMarginPadding.css";
+import "@/styles/sizes.css"
+import "@/styles/colors.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const geistSans = Geist({
