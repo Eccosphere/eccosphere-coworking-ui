@@ -1,5 +1,4 @@
-@import "../../styles/colors.css";
-@import "../../styles/sizes.css";
+@import "../../styles/variable.css";
 
 .footer-container {
   width: 90%;
