@@ -17,7 +17,9 @@ const HomePage = () => {
   const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
-    setOpenModal(true);
+    setTimeout(() => {
+      setOpenModal(true);
+    }, 5000);
   }, []);
 
   const handleOpenModal = () => {
