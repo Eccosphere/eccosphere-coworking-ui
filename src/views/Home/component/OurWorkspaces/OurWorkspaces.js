@@ -11,7 +11,9 @@ const OurWorkspaces = () => {
           <h2 className={styles["heading-text"]}> Our Workspaces</h2>
         </div>
 
-        <div className="div-space-between f-wrap">
+        <div className={styles["card-container"]}>
+          <div className={styles["scroll-container"]}>
+
           {workspaces.map((item) => (
             <div key={item.id} className={styles["card"]}>
               <Image
@@ -25,6 +27,7 @@ const OurWorkspaces = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </div>
