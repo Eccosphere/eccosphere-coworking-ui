@@ -8,6 +8,19 @@ export const navLinks = [
     link: "/about",
   },
   {
+    name: "Services",
+    servicesLink: [
+      {
+        name: "Coworking",
+        link: "/coworking",
+      },
+      {
+        name: "Managed Office",
+        link: "/managed-office",
+      },
+    ],
+  },
+  {
     name: "Gallery",
     link: "/gallery",
   },
