@@ -14,7 +14,7 @@ const EccoFooter = () => {
       <div className={styles["footer-content"]}>
         <Image src={logo} alt="Eccosphere" className={styles["logo"]} />
         <p className={styles["footer-text"]}>
-          We are on a mission href change how India works
+          We are on a mission to change how India works.
         </p>
         <p className={styles["footer-text"]}>
           ©2017 Eccosphere The Coworking Sanctuary.
@@ -26,9 +26,7 @@ const EccoFooter = () => {
         <p className={styles["footer-address-text"]}>
           Eccosphere coworking Pvt. Ltd.
         </p>
-        <p className={styles["footer-address-text"]}>
-          B-61 Sector 67, Noida.
-        </p>
+        <p className={styles["footer-address-text"]}>B-61 Sector 67, Noida.</p>
         <p className={styles["footer-address-text"]}>Uttar Pardesh 201301</p>
         <p className={`${styles["footer-no-text"]} mt-2`}>
           Email - chandank@eccosphere.com
