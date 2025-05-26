@@ -26,7 +26,7 @@ const EccoFooter = () => {
         <p className={styles["footer-address-text"]}>
           Eccosphere coworking Pvt. Ltd.
         </p>
-        <p className={styles["footer-address-text"]}>B-61 Sector 67, Noida.</p>
+        <p className={styles["footer-address-text"]}>B-70 Sector 67, Noida.</p>
         <p className={styles["footer-address-text"]}>Uttar Pardesh 201301</p>
         <p className={`${styles["footer-no-text"]} mt-2`}>
           Email - chandank@eccosphere.com

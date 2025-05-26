@@ -109,7 +109,7 @@
     font-weight: var(--fontWeight400);
     text-decoration: none;
     cursor: pointer;
-    padding: 0 7px;
+    padding: 0 10px;
   }
 
   .navLinks {
@@ -144,5 +144,14 @@
     height: 100%;
     display: flex;
     gap: 10px;
+  }
+
+  .dropdown {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .dropdownItem {
+    padding: 0;
   }
 }
