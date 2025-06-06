@@ -13,6 +13,7 @@ export const navLinks = [
       {
         name: "Coworking",
         link: "/coworking",
+        disabled: true,
       },
       {
         name: "Managed Office",
