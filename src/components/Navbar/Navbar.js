@@ -9,46 +9,16 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const [openToggle, setOpenToggle] = useState(false);
 
   const getNavList = (data) => {
     return data.map((item, index) => {
-      if (item.name !== "Services") {
-        return (
-          <li key={index}>
-            <Link
-              className={styles["link"]}
-              href={item.link}
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {item.name}
-            </Link>
-          </li>
-        );
-      }
-      // else {
-      //   return (
-      //     <li key={index} className={styles.dropdownWrapper}>
-      //       <button
-      //         className={`${styles.dropdown} ${styles.link}`}
-      //         onClick={() => setOpenToggle(!openToggle)}
-      //       >
-      //         {item.name}
-      //       </button>
-      //       {openToggle && (
-      //         <ul className={styles.dropdownMenu}>
-      //           {item.servicesLink.map((item, index) => (
-      //             <li className={styles.dropdownItem} key={index}>
-      //               <Link className={styles.link} href={item.link}>
-      //                 {item.name}
-      //               </Link>
-      //             </li>
-      //           ))}
-      //         </ul>
-      //       )}
-      //     </li>
-      //   );
-      // }
+      return (
+        <li key={index}>
+          <Link className={styles["link"]} href={item.link}>
+            {item.name}
+          </Link>
+        </li>
+      );
     });
   };
 

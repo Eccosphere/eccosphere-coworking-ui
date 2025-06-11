@@ -9,17 +9,7 @@ export const navLinks = [
   },
   {
     name: "Services",
-    servicesLink: [
-      {
-        name: "Coworking",
-        link: "/coworking",
-        disabled: true,
-      },
-      {
-        name: "Managed Office",
-        link: "/managed-office",
-      },
-    ],
+    link: "/services",
   },
   {
     name: "Gallery",

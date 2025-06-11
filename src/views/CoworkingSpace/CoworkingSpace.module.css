@@ -1,0 +1,126 @@
+.coworking-space {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.coworking-space-container {
+  width: 90%;
+  padding: 1.5rem;
+}
+
+.header-div {
+  width: 100%;
+  background: linear-gradient(135deg, #0b2b3e 0%, #0493a5 100%);
+  border-radius: 15px;
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.heading-text {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefits-container {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.benefits-container h2 {
+  color: #0b2b3e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+  color: #0493a5;
+  margin-bottom: 0.75rem;
+}
+
+.features-section {
+  padding: 1.5rem;
+  background-color: #0b2b3e;
+  color: white;
+  border-radius: 10px;
+}
+
+.features-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  padding: 0.75rem;
+  background-color: rgba(4, 147, 165, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li:before {
+  content: "✓";
+  margin-right: 0.5rem;
+  color: #0493a5;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .coworking-space-container {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .header-div {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading-text {
+    font-size: 1rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
